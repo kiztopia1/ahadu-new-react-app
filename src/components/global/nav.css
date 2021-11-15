@@ -3,19 +3,22 @@ nav {
     color: white;
     padding: 5px;
     position: relative;
+    display: flex;
 }
 nav .logo{
     padding:5px;
-    padding-left: 50px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
     
 }
 nav .burger{
     display: flex;
     flex-direction: column;
     width: 25px;
-    position: absolute;
-    top:5px;
-    left: 20px;
+    padding:5px;
 }
 nav .burger span {
     padding:1px;
@@ -23,7 +26,7 @@ nav .burger span {
     margin:2px
 }
 nav .search {
-    width: 100%;
+    width: 80%;
     display: flex;
     padding: 7px 3%;
 }
@@ -36,4 +39,8 @@ nav .search input {
 
 nav .search .btn {
     padding: 1px 20px;
+}
+nav .other{
+    display: flex;
+    align-items: center;
 }
