@@ -1,0 +1,39 @@
+nav {
+    background-color: #404b5f;
+    color: white;
+    padding: 5px;
+    position: relative;
+}
+nav .logo{
+    padding:5px;
+    padding-left: 50px;
+    
+}
+nav .burger{
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    position: absolute;
+    top:5px;
+    left: 20px;
+}
+nav .burger span {
+    padding:1px;
+    background-color: rgb(209, 203, 203);
+    margin:2px
+}
+nav .search {
+    width: 100%;
+    display: flex;
+    padding: 7px 3%;
+}
+
+nav .search input {
+    width: 90%;
+    padding: 6px;
+    color: black;
+}
+
+nav .search .btn {
+    padding: 1px 20px;
+}

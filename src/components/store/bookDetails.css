@@ -1,0 +1,30 @@
+.main{
+    margin:10px;
+    height:200px;
+}
+.main .details{
+    height: 100%;
+    padding:20px;
+}
+
+.bookDetailImg{
+    padding: 0px 1px;
+    margin: 0px;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+
+    
+}
+.bookDetailImg img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.price{
+    padding:10px 0;
+    margin:5px 0;
+}
+.buyButton{
+    background:rgb(238, 175, 81);
+    color:black;
+}

@@ -1,0 +1,19 @@
+.booksList{
+    position: relative;
+    overflow-x: scroll;
+}
+.booksList ul{
+    position: relative;
+    display: flex ;
+    margin:20px;
+    list-style: none;
+    transition: 1s;
+    padding: 0;
+}
+.book{
+    min-width:25%;
+    padding:10px
+}
+.book img{
+    width: 100%;
+}
