@@ -1,10 +1,10 @@
 import React, { useState, useEffect} from 'react';
 import { connect } from 'react-redux';
 import './booksList.css'
-
 import {getBooks} from '../selectors'
 import BooksListSlide from './booksListSlide';
 import { loadBooks} from '../thunks'
+import { Link } from 'react-router-dom';
 
 const BooksList = ({books, startLoadingBooks}) => {
     let [page, setPage] = useState(0);
@@ -12,18 +12,23 @@ const BooksList = ({books, startLoadingBooks}) => {
     useEffect(()=>{
         startLoadingBooks()
     }, [])
-    
+    {console.log(books)}
     return (
         <div className="booksList">
                 <BooksListSlide/>
                 <ul id='booksList'>
-                    <li className='book'>
-                        <img className='bookImg'  src={`${process.env.PUBLIC_URL}/imgs/book.jpeg`}></img>
-                        <h4>the power of habit</h4>
-                        <small>by <a href="">adam hittlor</a></small>
-                    </li>
-                    {console.log(books)}
-                    
+                    {books.map(book => (
+                        <li className='book'>
+                            <Link to='ab'>
+                            <img className='bookImg'  src='/imgs/theDarkHours.jpg'></img>
+
+                            <h4>the power of habit</h4>
+                            <small>by <a href="">adam hittlor</a></small>
+                            </Link>
+                        </li>
+                    ))
+                    }
+                
                 </ul>
         </div>
     )
@@ -32,7 +37,6 @@ const mapStateToProps = (state) => ({
     books:state.BOOKS
 });
 const mapDispatchToProps = (dispatch) => ({
-   
     startLoadingBooks: () => dispatch(loadBooks())
 });
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

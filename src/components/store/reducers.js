@@ -1,7 +1,33 @@
 import { ADD_BOOKS, ADD_BOOKS_ROW, ADD_BOOK_TO_ROW } from "./actions";
 
-
-export const BOOKS = (state =[], action) => {
+let books = [
+    {   
+        "id": 1,
+        "title":"The power of habit",
+        "price":120,
+        "author":'jemes adam'
+    },
+    {   
+        "id": 1,
+        "title":"book 2",
+        "price":120,
+        "author":'jemes adam'
+    },
+    {   
+        "id": 1,
+        "title":"book3",
+        "price":120,
+        "author":'jemes adam'
+    },
+    {   
+        "id": 1,
+        "title":"book4",
+        "price":120,
+        "author":'jemes adam'
+    },
+    
+]
+export const BOOKS = (state =books , action) => {
     const {type, payload } = action;
     switch(type) {
         case ADD_BOOKS: {
@@ -18,6 +44,5 @@ export const BOOKS = (state =[], action) => {
             return state
     }
     
-    return state;
 }
 

@@ -1,22 +1,22 @@
 export default Books = [
     {"row":1, "data":[
         {
-            "titile":"The power of habit",
+            "title":"The power of habit",
             "price":120,
             "author":'jemes adam'
         },
         {
-            "titile":"book 2",
+            "title":"book 2",
             "price":120,
             "author":'jemes adam'
         },
         {
-            "titile":"boook3",
+            "title":"book3",
             "price":120,
             "author":'jemes adam'
         },
         {
-            "titile":"book4",
+            "title":"book4",
             "price":120,
             "author":'jemes adam'
         },
@@ -24,22 +24,22 @@ export default Books = [
     ]},
     {"row":2, "data":[
         {
-            "titile":"The power of habit",
+            "title":"The power of habit",
             "price":120,
             "author":'jemes adam'
         },
         {
-            "titile":"book 2",
+            "title":"book 2",
             "price":120,
             "author":'jemes adam'
         },
         {
-            "titile":"boook3",
+            "title":"boook3",
             "price":120,
             "author":'jemes adam'
         },
         {
-            "titile":"book4",
+            "title":"book4",
             "price":120,
             "author":'jemes adam'
         },

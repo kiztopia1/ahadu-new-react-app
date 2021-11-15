@@ -17,7 +17,9 @@ function App() {
         <Route path='/book' component={BookDetails}/>
         <Route path='/reader' component={Reader}/>
         <Route path='/signIn' component={SingIn}/>
+        <Route path='/:id' component={Reader}/>,
         <Route path="/" component={Store} exact/>
+
 
         </Switch>
         
