@@ -8,7 +8,7 @@ const Store = () => {
     return(
         <div className='store'>
             <Nav/>
-            <div class='main'>
+            <div className='main'>
                 <Aside/>
                 <BooksList/>
             </div>

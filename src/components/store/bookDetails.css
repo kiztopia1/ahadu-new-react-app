@@ -1,22 +1,27 @@
 .main{
     margin:10px;
     height:200px;
+    
 }
-.main .details{
+.details{
     height: 100%;
     padding:20px;
+    width: 500px;
 }
 
 .bookDetailImg{
     padding: 0px 1px;
     margin: 0px;
+    width: 400px;
     height: 100%;
     display:flex;
     justify-content: center;
+    
 
     
 }
 .bookDetailImg img {
+    height: 400px;
     max-height: 100%;
     max-width: 100%;
 }
@@ -27,4 +32,30 @@
 .buyButton{
     background:rgb(238, 175, 81);
     color:black;
+}
+.checkout{
+    border-radius: 5px;
+    border: 1px solid rgb(202, 141, 50);
+    box-shadow:0px 0px 6px rgb(165, 165, 165);
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    max-width:250px;
+    max-height: 170px !important;
+    padding-top: 20px;
+}
+.checkout span{
+    color: rgb(100, 100, 100);
+    font-size: 17px;
+}
+.checkout .one-click-btn{
+
+    background-color: red;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.checkout p{
+    font-size: 12px;
 }

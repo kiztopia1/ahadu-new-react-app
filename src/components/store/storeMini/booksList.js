@@ -23,8 +23,8 @@ const BooksList = ({books, startLoadingBooks}) => {
                             <img className='bookImg'  src='/imgs/theDarkHours.jpg'></img>
 
                             <h4>{book.title}</h4>
-                            <small class='flex'>by <a href="">adam hittlor</a></small>
-                            <span class='money-box'>{book.price}  birr</span>
+                            <small className='flex'>by adam hittlor</small>
+                            <span className='money-box'>{book.price}  birr</span>
                             </Link>
                         </li>
                     ))
