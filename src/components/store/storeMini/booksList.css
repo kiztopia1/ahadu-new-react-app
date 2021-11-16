@@ -1,6 +1,7 @@
 .booksList{
     position: relative;
     overflow-x: scroll;
+    margin-bottom: 40px;
 }
 .booksList ul{
     position: relative;
@@ -10,9 +11,13 @@
     transition: 1s;
     padding: 0;
 }
+.booksList .head{
+    padding-left:10px ;
+    color: rgb(48, 48, 48);
+}
 .book{
     min-width:20%;
-    padding:25px;
+    padding:10px 25px;
     transition: 0.01s;
     
 }

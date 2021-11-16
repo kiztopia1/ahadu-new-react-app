@@ -12,7 +12,8 @@ const Nav = () => {
                     <span></span>
                     <span></span>
                 </div>
-                AHADU
+                <Link to='/'>AHADU</Link>
+                
             </div>
 
             

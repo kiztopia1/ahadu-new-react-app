@@ -15,6 +15,8 @@
 
 a{
     margin:3px;
+    text-decoration: inherit;
+    color: inherit;
 }
 
 hero img {
@@ -25,7 +27,15 @@ hero img {
 }
 .money-box{
     border-radius: 3px;
-    background-color: rgb(223, 155, 28);
+    background-color: rgb(224, 155, 50);
     color:white;
     padding:5px;
+}
+.hr{
+    width: 80%;
+    height: 1px;
+    display: block;
+    padding: 0.1px;
+    margin:20px 20px;
+    background-color: rgb(170, 170, 170);
 }

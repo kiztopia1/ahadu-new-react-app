@@ -10,7 +10,10 @@ const Store = () => {
             <Nav/>
             <div className='main'>
                 <Aside/>
-                <BooksList/>
+                <div>
+                <BooksList title='best seller this month' />
+                <BooksList title='Recommended for you in ahadu eBook deals' />
+                </div>
             </div>
             
         </div>

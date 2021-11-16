@@ -7,7 +7,9 @@
     height: 100%;
     padding:20px;
     width: 500px;
+    border-right: 1px solid rgb(207, 207, 207) ;
 }
+
 
 .bookDetailImg{
     padding: 0px 1px;
@@ -16,9 +18,7 @@
     height: 100%;
     display:flex;
     justify-content: center;
-    
 
-    
 }
 .bookDetailImg img {
     height: 400px;
@@ -43,14 +43,17 @@
     max-width:250px;
     max-height: 170px !important;
     padding-top: 20px;
+    margin: 20px;
 }
 .checkout span{
-    color: rgb(100, 100, 100);
-    font-size: 17px;
+    color: rgb(61, 61, 61);
+    font-size: 15px;
+    margin-left: 10px;
+
 }
 .checkout .one-click-btn{
 
-    background-color: red;
+    background-color: rgb(224, 155, 50);
     padding: 5px;
     text-align: center;
     border-radius: 3px;

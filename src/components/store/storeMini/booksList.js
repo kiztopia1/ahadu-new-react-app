@@ -6,7 +6,7 @@ import BooksListSlide from './booksListSlide';
 import { loadBooks} from '../thunks'
 import { Link } from 'react-router-dom';
 
-const BooksList = ({books, startLoadingBooks}) => {
+const BooksList = ({books, startLoadingBooks, title}) => {
     let [page, setPage] = useState(0);
 
     useEffect(()=>{
@@ -15,7 +15,7 @@ const BooksList = ({books, startLoadingBooks}) => {
     {console.log(books)}
     return (
         <div className="booksList">
-                
+                <h3 className='head'>{title}</h3>
                 <ul id='booksList'>
                     {books.map(book => (
                         <li className='book'>
