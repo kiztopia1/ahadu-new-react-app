@@ -11,8 +11,12 @@
     padding: 0;
 }
 .book{
-    min-width:25%;
-    padding:10px
+    min-width:20%;
+    padding:15px;
+    transition: 0.01s;
+}
+.book:hover{
+    transform: scale(1.01);
 }
 .book img{
     width: 100%;
