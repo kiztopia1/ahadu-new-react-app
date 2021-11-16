@@ -11,7 +11,7 @@ const BookDetails = () => {
             <Nav/>
             <div className='main row '>
                 <div className="bookDetailImg col-md-4 col-xs-4">
-                    <img src={`${process.env.PUBLIC_URL}/imgs/book.jpeg`} className=''></img>
+                    <img src='/imgs/theDarkHours.jpg' className=''></img>
                 </div>
                 <div className=" details col-xs-8 col-sm-8">
                     <Link to="/">jemes bond</Link>
@@ -26,7 +26,7 @@ const BookDetails = () => {
                     </div>
                 </div>
             </div>
-            <BooksList></BooksList>
+            
         </div>
     )
 }

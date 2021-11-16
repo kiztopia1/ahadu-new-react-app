@@ -19,7 +19,7 @@ const BooksList = ({books, startLoadingBooks}) => {
                 <ul id='booksList'>
                     {books.map(book => (
                         <li className='book'>
-                            <Link to='ab'>
+                            <Link to={`book/${book.id}`}>
                             <img className='bookImg'  src='/imgs/theDarkHours.jpg'></img>
 
                             <h4>the power of habit</h4>
