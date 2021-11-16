@@ -15,16 +15,16 @@ const BooksList = ({books, startLoadingBooks}) => {
     {console.log(books)}
     return (
         <div className="booksList">
-                <BooksListSlide/>
+                
                 <ul id='booksList'>
                     {books.map(book => (
                         <li className='book'>
-                            <Link to={`book/${book.id}`}>
+                            <Link to={`book/${book.id}`} className='book-link'>
                             <img className='bookImg'  src='/imgs/theDarkHours.jpg'></img>
 
                             <h4>{book.title}</h4>
-                            <small>by <a href="">adam hittlor</a></small>
-                            <span>{book.price}  birr</span>
+                            <small class='flex'>by <a href="">adam hittlor</a></small>
+                            <span class='money-box'>{book.price}  birr</span>
                             </Link>
                         </li>
                     ))

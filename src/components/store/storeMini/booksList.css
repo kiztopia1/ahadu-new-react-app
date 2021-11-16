@@ -12,12 +12,21 @@
 }
 .book{
     min-width:20%;
-    padding:15px;
+    padding:25px;
     transition: 0.01s;
+    
 }
 .book:hover{
     transform: scale(1.01);
 }
+.book .book-link{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .book img{
-    width: 100%;
+    width: 80%;
+    padding: 0px 10%;
 }

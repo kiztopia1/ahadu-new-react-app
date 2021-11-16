@@ -23,3 +23,9 @@ hero img {
 .bold{
     font-weight: bold;
 }
+.money-box{
+    border-radius: 3px;
+    background-color: rgb(223, 155, 28);
+    color:white;
+    padding:5px;
+}
