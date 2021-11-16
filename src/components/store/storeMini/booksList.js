@@ -22,8 +22,9 @@ const BooksList = ({books, startLoadingBooks}) => {
                             <Link to={`book/${book.id}`}>
                             <img className='bookImg'  src='/imgs/theDarkHours.jpg'></img>
 
-                            <h4>the power of habit</h4>
+                            <h4>{book.title}</h4>
                             <small>by <a href="">adam hittlor</a></small>
+                            <span>{book.price}  birr</span>
                             </Link>
                         </li>
                     ))

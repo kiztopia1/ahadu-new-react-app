@@ -1,11 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import './bookDetails.css';
 
 import Nav from '../global/nav';
 import BooksList from './storeMini/booksList'
-const BookDetails = () => {
-
+import { connect } from 'react-redux';
+const BookDetails = ({books}) => {
+    let {id} = useParams()
+    let book = books.filter(book => book.id == id)[0]
+    console.log(id, book, books)
     return (
         <div className="bookDetails">
             <Nav/>
@@ -14,8 +17,8 @@ const BookDetails = () => {
                     <img src='/imgs/theDarkHours.jpg' className=''></img>
                 </div>
                 <div className=" details col-xs-8 col-sm-8">
-                    <Link to="/">jemes bond</Link>
-                    <h4 className="bold">The power of habit</h4>
+                    <Link to="/">{book.title}</Link>
+                    <h4 className="bold">{book.title}</h4>
 
                     <bold>book 4 out of 5</bold>
                     <div className='price alert-warning'>
@@ -30,4 +33,7 @@ const BookDetails = () => {
         </div>
     )
 }
-export default BookDetails;
+const mapStateToProps = (state) => ({
+    books:state.BOOKS
+});
+export default connect(mapStateToProps)(BookDetails) ;

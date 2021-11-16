@@ -1,0 +1,4 @@
+.store .main{
+    display:flex;
+    min-height: 80vh;
+}
