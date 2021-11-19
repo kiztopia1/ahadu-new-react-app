@@ -4,7 +4,6 @@ import './aside.css'
 const Aside = () => {
     return (
         <aside>
-            <h2 ></h2>
             <h3>Popular in Kindle</h3>
             <ul>
                 <li><Link to='/' >Kindle Book Deals</Link></li>

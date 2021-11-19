@@ -11,6 +11,7 @@ const Store = () => {
             <div className='main'>
                 <Aside/>
                 <div>
+                <Hero/>
                 <BooksList title='best seller this month' />
                 <BooksList title='Recommended for you in ahadu eBook deals' />
                 </div>
