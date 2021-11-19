@@ -14,7 +14,7 @@ const BookDetails = ({books}) => {
             <Nav/>
             <div className=' row flex '>
                 <div className="bookDetailImg col-md-4 col-xs-4">
-                    <img src='/imgs/theDarkHours.jpg' className=''></img>
+                    <img src={`/imgs/${book.img_id}`} className=''></img>
                 </div>
 
                 <div className="details col-xs-8 col-sm-8">

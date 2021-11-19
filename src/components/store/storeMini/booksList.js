@@ -7,7 +7,6 @@ import { loadBooks} from '../thunks'
 import { Link } from 'react-router-dom';
 
 const BooksList = ({books, startLoadingBooks, title}) => {
-    let [page, setPage] = useState(0);
 
     useEffect(()=>{
         startLoadingBooks()
@@ -18,9 +17,9 @@ const BooksList = ({books, startLoadingBooks, title}) => {
                 <h3 className='head'>{title}</h3>
                 <ul id='booksList'>
                     {books.map(book => (
-                        <li className='book'>
-                            <Link to={`book/${book.id}`} className='book-link'>
-                            <img className='bookImg'  src='/imgs/theDarkHours.jpg'></img>
+                        <li className='book' key={book.id}>
+                            <Link to={`/book/${book.id}`} className='book-link'>
+                            <img className='bookImg'  src={`/imgs/${book.img_id}`}></img>
 
                             <h4>{book.title}</h4>
                             <small className='flex'>by adam hittlor</small>
