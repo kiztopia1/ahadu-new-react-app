@@ -15,6 +15,7 @@ const BooksList = ({books, startLoadingBooks, title}) => {
     return (
         <div className="booksList">
                 <h3 className='head'>{title}</h3>
+                <span className='hr'></span>
                 <ul id='booksList'>
                     {books.map(book => (
                         <li className='book' key={book.id}>

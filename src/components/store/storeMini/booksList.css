@@ -14,6 +14,7 @@
 .booksList .head{
     padding-left:10px ;
     color: rgb(48, 48, 48);
+    font-size: 24px!important;
 }
 .book{
     min-width:20%;
